@@ -11,15 +11,15 @@ namespace Data.Mapping.TypeExpenses
     {
         public void Configure(EntityTypeBuilder<TypeExpense> builder)
         {
-            builder.ToTable("typeexpense")
-                .HasKey(t => t.Id);
-            builder.Property(t => t.Description)
+            builder.ToTable("TypeExpense")
+                .HasKey(t => t.id);
+            builder.Property(t => t.description)
                 .HasMaxLength(250);
-            builder.Property(t => t.Default_value)
+            builder.Property(t => t.default_value)
                 .HasPrecision(18, 2);
-            builder.Property(t => t.Type)
+            builder.Property(t => t.type)
                 .HasMaxLength(50);
-            builder.Property(t => t.Status);
+            builder.Property(t => t.status);
                 
 
         }

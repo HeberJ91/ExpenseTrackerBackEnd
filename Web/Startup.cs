@@ -29,7 +29,7 @@ namespace Web
         {
             services.AddControllers();
             services.AddDbContext<DBContextSystem>(options=>
-                options.UseNpgsql(Configuration.GetConnectionString("DefaulConnection")));
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

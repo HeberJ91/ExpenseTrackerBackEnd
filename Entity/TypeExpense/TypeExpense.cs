@@ -7,16 +7,16 @@ namespace Entities.TypeExpense
 {
    public class TypeExpense
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         [Required]
 
-        public string  Description { get; set; }
+        public string  description { get; set; }
 
-        public string Type { get; set; }
+        public string type { get; set; }
 
-        public Boolean Status { get; set; }
+        public Boolean status { get; set; }
 
-        public decimal Default_value { get; set; }
+        public decimal default_value { get; set; }
 
     }
 }

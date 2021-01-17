@@ -1,4 +1,5 @@
-﻿using Entities.TypeExpense;
+﻿using Data.Mapping.TypeExpenses;
+using Entities.TypeExpense;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,12 @@ namespace Data
         }
 
 
-        DbSet<TypeExpense> TypeExpense { get; set; }
+
+        public DbSet<TypeExpense> TypesExpense { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new TypeExpenseMap());
         }
     }
 }
