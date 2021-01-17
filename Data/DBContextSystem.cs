@@ -15,7 +15,7 @@ namespace Data
         }
 
 
-        DbSet<TypeExpense> typeExpenses { get; set; }
+        DbSet<TypeExpense> TypeExpense { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
